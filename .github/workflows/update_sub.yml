@@ -1,0 +1,31 @@
+name: Update V2Ray Subscription
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-and-upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Install Rclone
+        run: sudo curl https://rclone.org/install.sh | sudo bash
+
+      - name: Setup Rclone Config
+        run: |
+          mkdir -p ~/.config/rclone
+          cat <<EOF > ~/.config/rclone/rclone.conf
+          ${{ secrets.RCLONE_CONFIG_CONTENT }}
+          EOF
+
+      - name: Process and Encode
+        run: |
+          for f in *.txt; do cat "$f"; echo ""; done | tr -d '\r' | grep -E "^(vmess|vless|ss|ssr|trojan|hysteria2|tuic)://" | sort -u | base64 -w 0 > sub-test.txt
+
+      - name: Upload to Oracle OSS
+        run: rclone copy sub-test.txt monk:monk/ --progress
