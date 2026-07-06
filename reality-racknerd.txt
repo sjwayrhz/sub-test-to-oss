@@ -1,1 +1,1 @@
-vless://5e99b1fc-76e2-434c-8170-b54a6bc8c67d@155.94.147.43:65443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=apple.com&fp=chrome&pbk=MJNCFxuv9VQQ2SSm6oCOAi4lQLnUn0gZ2D8gXMKASwE&sid=0d44fb02&type=tcp&headerType=none#reality-racknerd
+vless://589836d8-caf6-44f3-af2b-ae09f394b5dd@155.94.147.43:65443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.ivi.tv&fp=chrome&pbk=h8oRFiX7kTCC_JWjOAb77WFlv2HqL49mu5w5T9bZzEI&sid=39e8f741c65e9539&spx=%2F&type=tcp&headerType=none#reality-racknerd
