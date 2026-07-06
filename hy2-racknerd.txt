@@ -1,1 +1,1 @@
-vless://589836d8-caf6-44f3-af2b-ae09f394b5dd@155.94.147.43:65443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.ivi.tv&fp=chrome&pbk=h8oRFiX7kTCC_JWjOAb77WFlv2HqL49mu5w5T9bZzEI&sid=39e8f741c65e9539&spx=%2F&type=tcp&headerType=none#reality-racknerd
+hysteria2://L1O748cyZOkrnnwj0xAnCb802gWnTC9@155.94.147.43:65440/?sni=bing.com&insecure=1#hy2-racknerd
